@@ -4,10 +4,8 @@
 !.bashrc
 !.profile
 !.bash_aliases
-!.bash_history
 !.config
 !.profile
 !.tmux
 !.tmux.conf
-!.viminfo
 !.vimrc
