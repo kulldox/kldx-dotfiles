@@ -226,7 +226,7 @@ parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-alias gcom="git commit -am \"msg\""
+alias gcom="git commit -m \"msg\""
 alias gcopy="git stash"
 alias gpaste="git stash pop"
 alias gfnfs="git flow feature start"
@@ -235,6 +235,9 @@ alias gchignore="git ls-files --others -i --exclude-standard"
 alias gitsetkldx="git config --local user.email \"kulldox@gmail.com\"; git config --local user.name \"Marcos\""
 alias gitsetmctnokia="git config --local user.email \"marian_costin.costin.ext@nokia.com\"; git config --local user.name \"Marian Costin\""
 alias gitsetmctcts="git config --local user.email \"marian.costin@computaris.com\"; git config --local user.name \"Marian Costin\""
+#alias gitlog="git log --author=hacheng --since=\"1d\" --pretty=format:\"%h%x09%an%x09%ad%x09%s\""
+#alias gitlog="git log --date=relative --pretty=\"format:%C(auto,yellow)%h%C(auto,magenta)% G? %C(auto,blue)%>(12,trunc)%ad %C(auto,green)%<(7,trunc)%aN%C(auto,reset)%s%C(auto,red)% gD%\""
+alias gitlog="git log --date=relative --pretty=\"format:%C(yellow)%h %Cblue%>(12)%ad %Cgreen%<(7)%aN%Cred%d %Creset%s\""
 
 #-------------------------------------------------------------
 # File & strings related functions:
