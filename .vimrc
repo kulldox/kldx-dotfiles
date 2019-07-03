@@ -77,6 +77,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " Check file in shellcheck:
 	map <leader>s :!clear && shellcheck %<CR>
-" Automatically deletes all trailing whitespace on save.
-	autocmd BufWritePre * %s/\s\+$//e
+" Automatically deletes all trailing whitespace on save. (Actually this breaks the new line option for paragraphs in Markdown)
+"	autocmd BufWritePre * %s/\s\+$//e
 
